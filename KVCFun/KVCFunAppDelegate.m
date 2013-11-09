@@ -15,4 +15,12 @@
     // Insert code here to initialize your application
 }
 
+@synthesize fido;
+
+- (IBAction)incrementFido:(id)sender {
+    
+    [self setFido:[self fido] + 1];
+}
+
+
 @end

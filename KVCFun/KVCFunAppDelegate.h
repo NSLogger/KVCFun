@@ -9,7 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface KVCFunAppDelegate : NSObject <NSApplicationDelegate>
+{
+    int fido;
+}
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (readwrite, assign) int fido;
+- (IBAction)incrementFido:(id)sender;
 @end
